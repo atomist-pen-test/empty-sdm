@@ -17,6 +17,13 @@
 import * as assert from "power-assert";
 
 describe("empty", () => {
+    /* By default, tests have logging turned off.
+     * If you need to turn it on, uncomment this:
+    before(() => configureLogging(MinimalLogging));
+    * And you will need to
+    import { configureLogging, MinimalLogging } from "@atomist/automation-client";
+    */
+
     it("is true", () => {
         assert(true);
     });
