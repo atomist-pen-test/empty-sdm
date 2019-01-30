@@ -21,7 +21,10 @@ describe("empty", () => {
      * If you need to turn it on, uncomment this:
     before(() => configureLogging(MinimalLogging));
     * And you will need to
-    import { configureLogging, MinimalLogging } from "@atomist/automation-client";
+    import {
+    configureLogging,
+    MinimalLogging,
+} from "@atomist/automation-client";
     */
 
     it("is true", () => {
