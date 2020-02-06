@@ -19,6 +19,7 @@ import { configure } from "@atomist/sdm-core";
 import { HelloWorldGoalConfigurer } from "./lib/goals/goalConfigurer";
 import { HelloWorldGoalCreator } from "./lib/goals/goalCreator";
 import { HelloWorldGoals } from "./lib/goals/goals";
+import { k8sSupport, KubernetesDeploy } from "@atomist/sdm-pack-k8s";
 
 /**
  * The main entry point into the SDM
